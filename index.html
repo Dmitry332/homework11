@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./jquery-3.7.0.js">
+    </script>
+</head>
+<body>
+<div class="container">
+    <img class="img-1" src="img-1.jpg">
+    <img class="img-2" src="img-2.jpg">
+</div>
+</body>
+<script>
+    $('.img-2').click(function(){
+        $('.img-2').slideUp('slow');
+    });
+
+    $('.img-1').click(function(){
+        $('.img-2').slideDown('slow');
+    });
+</script>
+</html>
